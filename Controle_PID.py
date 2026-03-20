@@ -22,7 +22,7 @@ G = G_s * G_delay
 # Primeiro, obter resposta ao degrau do sistema sem controlador
 t, y = step_response(G)
 # Encontrar ponto de inflexão e ajustar (simplificado, usaremos parâmetros típicos)
-Kc = 1.2 / (Kp * (theta/tau))  # aproximação para FOPDT
+Kc = 4*1.2 / (Kp * (theta/tau))  # aproximação para FOPDT
 Ti = 2.0 * theta
 Td = 0.5 * theta
 
